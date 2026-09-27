@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XMLAppReader.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+
+            <Label
+                Text="Seja bem-vindo!"
+                Style="{StaticResource Headline}"/>
+
+            <Label
+                Text="Digite as informações da nota"
+                Style="{StaticResource SubHeadline}" />
+
+            <Label
+                Text="Série"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="14"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"/>
+
+            <Entry x:Name="EntrySerie"
+                   Placeholder="Digite a série desejada"
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalOptions="Fill" />
+
+            <Label
+                    Text="Competência"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    FontSize="14"
+                    HorizontalOptions="Start"
+                    HorizontalTextAlignment="Start"
+                />
+
+            <DatePicker x:Name="EntryData"
+            Format="MM/yyyy"
+            WidthRequest="{Binding Source={x:Reference EntrySerie}, Path=Width}"/>
+                
+            <Button
+            x:Name="CounterBtn"
+            Text="Buscar" 
+            HorizontalOptions="Fill"
+            Clicked="ClicarBotao"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
