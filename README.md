@@ -3,10 +3,10 @@
 **Integrantes:**
 
 * Jéssica Cristina
-* Gustavo
-* Ruan
-* Gabriel
-* Victor
+* Gustavo Henrique
+* Ruan Padilha
+* Gabriel Freitas
+* Victor Rodrigues
 
 **Termo/Curso:**
 
