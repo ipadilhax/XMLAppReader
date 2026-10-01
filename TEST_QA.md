@@ -14,9 +14,7 @@
 
 # 2. Massa de Dados
 
-## Exemplo de XML Testado
-
-### XML 1 — Exemplo Válido Processado
+## XML 1 — Exemplo Válido Processado
 
 **Arquivo:** `nota_teste.xml`
 
@@ -134,7 +132,7 @@ Isso garante que o valor seja tratado corretamente como um número decimal e exp
 **Descrição:**
 Ao tentar iniciar a busca sem informar a série, a aplicação disparou o alerta de validação informando que a série é um campo de preenchimento obrigatório.
 
-**Resultado:**
+**Resultado obtido:**
 
 O sistema exibiu corretamente a mensagem:
 
@@ -142,7 +140,13 @@ O sistema exibiu corretamente a mensagem:
 Aviso: Digite a série.
 ```
 
-> **Evidência:** Não foram anexados prints a este documento.
+### Evidência — Imagem 1
+
+> **ANEXAR IMAGEM 1 AQUI — CT01: Alerta de série obrigatória**
+
+**Cole o print abaixo com `Ctrl+V`:**
+
+![Primeira imagem](C:\Users\Gabriel\Downloads\testread\primeira)
 
 ---
 
@@ -153,7 +157,7 @@ Aviso: Digite a série.
 **Descrição:**
 Ao informar uma série válida antes de criar a pasta `C:\XmlNfce`, o sistema validou a ausência do diretório no disco rígido e exibiu uma mensagem amigável ao usuário sem interromper a aplicação.
 
-**Resultado:**
+**Resultado obtido:**
 
 O sistema exibiu corretamente a mensagem:
 
@@ -161,7 +165,13 @@ O sistema exibiu corretamente a mensagem:
 Aviso: A pasta C:\XmlNfce não foi encontrada.
 ```
 
-> **Evidência:** Não foram anexados prints a este documento.
+### Evidência — Imagem 2
+
+> **ANEXAR IMAGEM 2 AQUI — CT02: Alerta de diretório não encontrado**
+
+**Cole o print abaixo com `Ctrl+V`:**
+
+![Segunda imagem](C:\Users\Gabriel\Downloads\testread\segunda)
 
 ---
 
@@ -178,7 +188,7 @@ Após criar o diretório `C:\XmlNfce` com o arquivo `nota_teste.xml`, contendo:
 
 a aplicação realizou a leitura do lote, aplicou os filtros definidos e confirmou a aprovação da nota.
 
-**Resultado:**
+**Resultado obtido:**
 
 O sistema identificou e processou corretamente o arquivo XML válido.
 
@@ -190,16 +200,53 @@ Arquivos analisados: 1
 Notas que atendem aos critérios: 1
 ```
 
-### Evidências
+### Evidência — Imagem 3
 
-1. Arquivo XML de origem: `nota_teste.xml`
-2. Resultado do processamento: Pop-up de conclusão
+> **ANEXAR IMAGEM 3 AQUI — CT03: Arquivo XML de origem `nota_teste.xml`**
 
-> **Evidência:** Os prints não foram anexados a este documento.
+**Cole o print abaixo com `Ctrl+V`:**
+
+![Terceira imagem](C:\Users\Gabriel\Downloads\testread\bloco)
+
+### Evidência — Imagem 4
+
+> **ANEXAR IMAGEM 4 AQUI — CT03: Pop-up de conclusão do processamento**
+
+**Cole o print abaixo com `Ctrl+V`:**
+
+![Quarta imagem](C:\Users\Gabriel\Downloads\testread\terceira)
 
 ---
 
-## CT04 e CT05 — Geração e Formatação do Arquivo `envio.json`
+## CT04 — Descarte por CPF/CNPJ, Série/Competência Divergente ou Erro no XML
+
+**Status:** Aprovado
+
+**Descrição:**
+A aplicação realiza o descarte de arquivos XML que não atendem aos critérios definidos, como:
+
+* Presença de CPF ou CNPJ em `<dest>`;
+* Série divergente;
+* Competência divergente;
+* XML inválido ou malformado.
+
+Os erros de leitura são tratados por meio de `try-catch`, evitando que um arquivo inválido interrompa o processamento dos demais.
+
+**Resultado obtido:**
+
+A aplicação descartou o XML via log (`Console.WriteLine`) sem interromper a execução ou travar.
+
+### Evidência — Imagem 5
+
+> **ANEXAR IMAGEM 5 AQUI — CT04: Log/resultado do descarte do XML**
+
+**Cole o print abaixo com `Ctrl+V`:**
+
+<!-- COLE A IMAGEM 5 AQUI -->
+
+---
+
+## CT05 — Geração e Formatação do Arquivo `envio.json`
 
 **Status:** Aprovado
 
@@ -230,7 +277,13 @@ O arquivo foi gerado corretamente, garantindo:
 ]
 ```
 
-> **Evidência:** Não foram anexados prints a este documento.
+### Evidência — Imagem 6
+
+> **ANEXAR IMAGEM 6 AQUI — CT05: Arquivo `envio.json` gerado**
+
+**Cole o print abaixo com `Ctrl+V`:**
+
+<!-- COLE A IMAGEM 6 AQUI -->
 
 ---
 
