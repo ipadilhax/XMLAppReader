@@ -60,5 +60,4 @@ O método `RegraXML` aplica validações sequenciais aos ficheiros XML:
     "valor": 45.90
   }
 ]
-💻 Como Executar o ProjetoClone o repositório para o seu ambiente local:Bashgit clone https://github.com/seu-usuario/XMLAppReader.git
-Abra a solução no Visual Studio:Certifique-se de ter o Visual Studio 2022 com a carga de trabalho de desenvolvimento .NET MAUI instalada.Prepare o ambiente de teste:Crie o diretório C:\XmlNfce\ no seu sistema operacional.Adicione os ficheiros .xml das notas fiscais dentro dessa pasta.Execute a aplicação:Selecione o alvo de execução para Windows Machine no painel superior.Pressione F5 para compilar e iniciar o projeto.
+
