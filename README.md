@@ -1,4 +1,4 @@
-# 📄 Documentação da Solução XML
+# Documentação da Solução XML
 
 **Integrantes:**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 Introdução: As dores e suas soluções
+## Introdução: As dores e suas soluções
 
 A empresa varejista realiza diariamente a emissão de centenas de **Notas Fiscais de Consumidor Eletrônica (NFC-e)**, modelo **65**. Esses documentos fiscais são armazenados em formato XML em um diretório local e precisam ser analisados para atender às exigências de auditoria e possibilitar a integração das informações com o sistema contábil.
 
@@ -54,9 +54,9 @@ Dessa forma, a solução desenvolvida automatiza a extração das NFC-e válidas
 
 ---
 
-# 🔄 Lógica de Leitura dos XMLs e Aplicação dos Filtros
+# Lógica de Leitura dos XMLs e Aplicação dos Filtros
 
-## 👁️ Visão geral do fluxo
+## Visão geral do fluxo
 
 O processamento é disparado pelo botão **Buscar (`ClicarBotao`)** e segue algumas etapas.
 
@@ -78,7 +78,7 @@ Caso a série não seja informada, o processamento é interrompido e um aviso é
 
 ---
 
-# 📂 Leitura dos Arquivos — `VerificarXMLsAsync`
+# Leitura dos Arquivos — `VerificarXMLsAsync`
 
 A leitura dos arquivos começa com a verificação da existência do diretório configurado.
 
@@ -117,7 +117,7 @@ Ao final do processamento, é retornada uma tupla contendo:
 
 ---
 
-# 🧩 Interpretação do XML
+# Interpretação do XML
 
 Os arquivos XML seguem o padrão da **NF-e/NFC-e**. Portanto, seus elementos pertencem ao namespace:
 
@@ -140,7 +140,7 @@ Caso os elementos `infNFe` ou `ide` não existam, o arquivo é considerado invá
 
 ---
 
-# 🔎 Filtros Aplicados — `RegraXML`
+# Filtros Aplicados — `RegraXML`
 
 Os filtros são aplicados de forma sequencial, seguindo o padrão **fail-fast**.
 
@@ -249,7 +249,7 @@ Essa configuração garante que o ponto seja utilizado como separador decimal, s
 
 ---
 
-# 📦 Notas aprovadas
+# Notas aprovadas
 
 As notas que passam por todos os filtros são convertidas em objetos `NotaEnvio`.
 
@@ -263,7 +263,7 @@ Cada objeto contém os seguintes campos:
 
 ---
 
-# 📝 Geração do JSON — `GerarJson`
+# Geração do JSON — `GerarJson`
 
 A lista de notas aprovadas é serializada utilizando:
 
@@ -308,7 +308,7 @@ Launcher.Default.OpenAsync
 
 ---
 
-# 📄 Exemplo de saída
+# Exemplo de saída
 
 ```json
 [
@@ -322,7 +322,7 @@ Launcher.Default.OpenAsync
 
 ---
 
-# ⚠️ Tratamento de erros
+# Tratamento de erros
 
 A aplicação possui mecanismos para evitar que problemas individuais interrompam todo o processamento.
 
@@ -348,7 +348,7 @@ O erro é registrado no console e o processamento continua normalmente com os de
 
 ---
 
-# ✅ Resultado
+# Resultado
 
 A solução permite automatizar o processamento das NFC-e, evitando a análise manual de centenas de arquivos XML.
 
@@ -356,9 +356,9 @@ O sistema realiza a leitura, validação e filtragem dos documentos de acordo co
 
 Com isso, o processo se torna:
 
-* ⚡ Mais rápido;
-* 🎯 Mais preciso;
-* 🔄 Padronizado;
-* 📊 Rastreável;
-* 📁 Mais organizado;
-* 🔗 Adequado para integração com o sistema contábil.
+*  Mais rápido;
+*  Mais preciso;
+*  Padronizado;
+*  Rastreável;
+*  Mais organizado;
+*  Adequado para integração com o sistema contábil.
