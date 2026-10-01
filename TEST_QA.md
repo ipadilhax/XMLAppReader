@@ -140,13 +140,9 @@ O sistema exibiu corretamente a mensagem:
 Aviso: Digite a série.
 ```
 
-### Evidência — Imagem 1
+### Evidência
 
-> **ANEXAR IMAGEM 1 AQUI — CT01: Alerta de série obrigatória**
-
-**Cole o print abaixo com `Ctrl+V`:**
-
-![Primeira imagem](C:\Users\Gabriel\Downloads\testread\primeira.png)
+![Primeira imagem](evidencias/primeira.png)
 
 ---
 
@@ -165,13 +161,9 @@ O sistema exibiu corretamente a mensagem:
 Aviso: A pasta C:\XmlNfce não foi encontrada.
 ```
 
-### Evidência — Imagem 2
+### Evidência
 
-> **ANEXAR IMAGEM 2 AQUI — CT02: Alerta de diretório não encontrado**
-
-**Cole o print abaixo com `Ctrl+V`:**
-
-![Segunda imagem](C:\Users\Gabriel\Downloads\testread\segunda.png)
+![Segunda imagem](evidencias/segunda.png)
 
 ---
 
@@ -200,22 +192,13 @@ Arquivos analisados: 1
 Notas que atendem aos critérios: 1
 ```
 
-### Evidência — Imagem 3
+### Evidência
 
-> **ANEXAR IMAGEM 3 AQUI — CT03: Arquivo XML de origem `nota_teste.xml`**
+![Terceira imagem](evidencias/bloco.png)
 
-**Cole o print abaixo com `Ctrl+V`:**
+### Evidência
 
-![Terceira imagem](C:\Users\Gabriel\Downloads\testread\bloco.png)
-
-### Evidência — Imagem 4
-
-> **ANEXAR IMAGEM 4 AQUI — CT03: Pop-up de conclusão do processamento**
-
-**Cole o print abaixo com `Ctrl+V`:**
-
-![Quarta imagem](C:\Users\Gabriel\Downloads\testread\terceira.png)
-
+![Quarta imagem](evidencias/terceira.png)
 ---
 
 ## CT04 — Descarte por CPF/CNPJ, Série/Competência Divergente ou Erro no XML
@@ -235,14 +218,6 @@ Os erros de leitura são tratados por meio de `try-catch`, evitando que um arqui
 **Resultado obtido:**
 
 A aplicação descartou o XML via log (`Console.WriteLine`) sem interromper a execução ou travar.
-
-### Evidência — Imagem 5
-
-> **ANEXAR IMAGEM 5 AQUI — CT04: Log/resultado do descarte do XML**
-
-**Cole o print abaixo com `Ctrl+V`:**
-
-<!-- COLE A IMAGEM 5 AQUI -->
 
 ---
 
@@ -276,15 +251,6 @@ O arquivo foi gerado corretamente, garantindo:
   }
 ]
 ```
-
-### Evidência — Imagem 6
-
-> **ANEXAR IMAGEM 6 AQUI — CT05: Arquivo `envio.json` gerado**
-
-**Cole o print abaixo com `Ctrl+V`:**
-
-<!-- COLE A IMAGEM 6 AQUI -->
-
 ---
 
 # 5. Resumo dos Resultados
