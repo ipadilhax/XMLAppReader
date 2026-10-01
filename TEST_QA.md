@@ -146,7 +146,7 @@ Aviso: Digite a série.
 
 **Cole o print abaixo com `Ctrl+V`:**
 
-![Primeira imagem](C:\Users\Gabriel\Downloads\testread\primeira)
+![Primeira imagem](C:\Users\Gabriel\Downloads\testread\primeira.png)
 
 ---
 
@@ -171,7 +171,7 @@ Aviso: A pasta C:\XmlNfce não foi encontrada.
 
 **Cole o print abaixo com `Ctrl+V`:**
 
-![Segunda imagem](C:\Users\Gabriel\Downloads\testread\segunda)
+![Segunda imagem](C:\Users\Gabriel\Downloads\testread\segunda.png)
 
 ---
 
@@ -206,7 +206,7 @@ Notas que atendem aos critérios: 1
 
 **Cole o print abaixo com `Ctrl+V`:**
 
-![Terceira imagem](C:\Users\Gabriel\Downloads\testread\bloco)
+![Terceira imagem](C:\Users\Gabriel\Downloads\testread\bloco.png)
 
 ### Evidência — Imagem 4
 
@@ -214,7 +214,7 @@ Notas que atendem aos critérios: 1
 
 **Cole o print abaixo com `Ctrl+V`:**
 
-![Quarta imagem](C:\Users\Gabriel\Downloads\testread\terceira)
+![Quarta imagem](C:\Users\Gabriel\Downloads\testread\terceira.png)
 
 ---
 
